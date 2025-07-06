@@ -1,26 +1,23 @@
+import React from "react";
+import logo from "../img/logo.png"; // Import the logo image
+
 export default function Header() {
   return (
-    <header>
-      <div className="address">
-        <h2>Kontakt</h2>
-        <ul>
-          <li>tel.: 783 273 664</li>
-          <li>e-mail: michal.milasz@adwokatura.pl</li>
-          <li>NIP: 8692008386</li>
-        </ul>
-      </div>
-      <div className="full-name">
-        <h1>Michał</h1>
-        <h1 className="surname">Milasz</h1>
-      </div>
-      <nav className="buttons">
-        <a className="button" href="home">
-          Strona główna
-        </a>
-        <a className="button" href="o-mnie">
-          O mnie
-        </a>
+    <header className="header">
+      <nav className="menu">
+        <div className="top-links">
+          <a href="#">Strona główna</a>
+          <a href="#">Specjalizacje</a>
+          <a href="#">O mnie</a>
+        </div>
+        <div className="bottom-link">
+          <a href="#">Kontakt</a>
+        </div>
       </nav>
+      <div className="logo">
+        <img src={logo} alt="Logo" />
+      </div>
     </header>
   );
 }
+

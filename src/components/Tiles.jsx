@@ -1,27 +1,29 @@
 export default function Tiles() {
   return (
+    <>
+    <div className="specializations">Specjalizacje</div>
     <div className="banner">
       <nav className="tiles">
         <a className="tile" href="spadek">
-          Spadek
+          Prawo bankowe
         </a>
         <a className="tile" href="rozwod">
-          Rozwód
+          Prawo cywilne
         </a>
         <a className="tile" href="kredyty">
-          Kredyty
-          <br />i pożyczki
+          Prawo spadkowe<br />i pożyczki
         </a>
         <a className="tile" href="umowy">
-          Umowy
+          Prawo umów
         </a>
         <a className="tile" href="firma">
-          Firma
+          Prawo gospodarcze
         </a>
         <a className="tile" href="inne">
           Inne sprawy
         </a>
       </nav>
     </div>
+    </>
   );
 }
