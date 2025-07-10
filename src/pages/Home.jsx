@@ -8,39 +8,29 @@ export default function Home() {
       <Header />
       <main>
         <div className="strona-glowna">
+          <b>
+            Zaufanie. Doświadczenie. Skuteczność.
+          </b>
           <p>
-            Pierwszy raz korzystasz z pomocy prawnika? Sprawdź ofertę dla siebie!
+            W prowadzonej przeze mnie Kancelarii Adwokackiej łączymy wiedzę prawniczą z indywidualnym podejściem do każdej sprawy. Reprezentujemy Klientów z pełnym zaangażowaniem, oferując kompleksową pomoc prawną w zakresie prawa cywilnego, karnego, rodzinnego, gospodarczego oraz administracyjnego.
           </p>
+          <b>Nasza misja</b>
           <p>
-            Masz problem, który chcesz skonsultować z prawnikiem? Nie chcesz
-            umawiać się na wizytę w tradycyjnej, stacjonarnej kancelarii? Obawiasz
-            się o kwotę, jaką przyjdzie Ci zapłacić po wizycie?
+            Dążymy do zapewnienia naszym Klientom bezpieczeństwa prawnego, klarowności działań oraz skutecznej reprezentacji. Działamy z pełnym poszanowaniem etyki zawodowej, dbając o poufność i interesy każdej osoby, która powierza nam swoją sprawę.
           </p>
-          <p>Znalazłem rozwiązanie dla takich osób jak Ty!</p>
-          <p>Proponuję rozmowę online! Zasady są proste:</p>
-          <ol>
-            <li>
-              Wysyłasz maila na adres michal.milasz@adwokatura.pl w którym
-              opisujesz problem, dołączasz dokumenty, które chcesz abym
-              przeanalizował i podajesz dogodny dla Ciebie termin rozmowy.
-            </li>
-            <li>
-              W odpowiedzi prześlę Ci szczegóły dotyczące rozmowy wraz z ceną za
-              konsultację, która na pewno nie ulegnie zmianie.
-            </li>
-            <li>
-              Jeśli zaakceptujesz warunki, ja ruszam do pracy! - na podstawie
-              otrzymanych od Ciebie informacji i dokumentów przygotowuję się do
-              rozmowy tak, aby w trakcie spotkania rozmawiać o samych konkretach!
-            </li>
-            <li>
-              Podczas naszej rozmowy przedstawię sytuację prawną, odpowiem na
-              Twoje pytania oraz udzielę Ci informacji jakie dalsze kroki możesz
-              podjąć (samodzielnie, z moją pomocą lub z pomocą osób, z którymi
-              współpracuję);
-            </li>
-            <li>Masz problem z głowy!</li>
-          </ol>
+          <b>Dlaczego warto nam zaufać?</b>
+          <p>
+            <ul className="benefits-list">
+              <li>Indywidualne podejście do Klienta</li>
+              <li>Profesjonalizm i rzetelność</li>
+              <li>Transparentność współpracy</li>
+              <li>Skuteczność poparta doświadczeniem</li>
+            </ul>
+          </p>
+          <p className="bottom-text">
+            <b>Zapraszamy do kontaktu oraz umówienia spotkania w Kancelarii.</b><br />
+            Zaufaj prawnikowi, który stawia Twoje interesy na pierwszym miejscu.
+          </p>
         </div>
       </main>
       <Tiles />

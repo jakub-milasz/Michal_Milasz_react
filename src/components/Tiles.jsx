@@ -7,26 +7,27 @@ export default function Tiles() {
       </div>
       <div className="banner">
         <nav className="tiles">
-          <a className="tile" href="spadek">
+          <a className="tile" href="bankowe">
             Prawo bankowe
           </a>
-          <a className="tile" href="rozwod">
+          <a className="tile" href="cywilne">
             Prawo cywilne
           </a>
-          <a className="tile" href="kredyty">
-            Prawo spadkowe<br />i pożyczki
+          <a className="tile" href="spadek">
+            Prawo spadkowe
           </a>
           <a className="tile" href="umowy">
             Prawo umów
           </a>
-          <a className="tile" href="firma">
+          <a className="tile" href="gospodarcze">
             Prawo gospodarcze
           </a>
-          <a className="tile" href="inne">
-            Inne sprawy
+          <a className="tile" href="ofe">
+            OFE
           </a>
         </nav>
       </div>
+      <p className="spec-bottom">Zachęcamy do kontaktu także w sprawach spoza wskazanych wyżej dziedzin.</p>
     </div>
     </>
   );
