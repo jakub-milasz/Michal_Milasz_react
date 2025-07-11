@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../img/logo.png"; // Import the logo image
+import logo from "../img/stopka.png"; // Import the logo image
 
 
 export default function Header() {
