@@ -1,177 +1,201 @@
-html {
-  scroll-behavior: smooth;
-  font-family: "Garamond";
-}
-
 :root {
-  --background: radial-gradient(circle, #066b15 0%, rgb(4, 24, 1) 100%);
+  --black: #090a07;
+  --gold: #bea64d;
+  --gray: #f5f5f5;
+  --text-color: #333;
+  font-family: 'Lora', serif;
+  scroll-behavior: smooth;
 }
 
-body {
-  background: var(--background);
-  color: white;
-  max-width: 2000px;
+/* Header css */
+
+.header {
+  display: flex;
+  background-color: var(--black);
+}
+
+.menu{
+  width: 50%;
+  height: 40vh;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.strona-glowna {
-  font-size: 18px;
+.menu a {
+  text-decoration: none;
+  position: relative;
+  color: var(--gold);
+  font-size: 1.6rem;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--gold);
+  transition: width 0.3s;
+}
+
+.menu a:hover::after,
+.menu a:focus::after,
+.menu a:active::after {
+  width: 100%;
+}
+
+.top-links {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-link {
+  margin-top: 10px;
+}
+
+.bottom-link a {
+  display: block;
+  width: 100%;
+}
+
+.logo {
+  width: 50%;
+  height: 40vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
   width: 70%;
-  /* height: 100%; */
-  margin: 0 auto;
-  text-align: justify;
+  height: auto;
+  object-fit: contain;
 }
 
-.spadek {
-  font-size: 18px;
-  text-align: justify;
+/* Tiles css */
+
+.container {
+  background-color: var(--gray);
 }
+
+/* Wspólny nagłówek */
+.heading {
+  background-color: var(--black);
+  color: var(--gold);
+  padding: 20px 20px;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+.heading-text {
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--gold);
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
 
 .banner {
   display: flex;
-  background-image: url("../src/img/kancelaria.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center center;
-  width: 100%;
-  position: relative;
-  aspect-ratio: 7 / 3;
-}
-
-.banner:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.strona-glowna ol {
-  padding-left: 10px;
-}
-
-.full-name {
-  display: block;
-  margin-right: 20px;
-}
-
-.surname {
-  margin-left: 80px;
-}
-
-h1 {
-  font-size: 50px;
-  font-style: italic;
-  font-weight: normal;
-  margin: 0;
-}
-
-h2 {
-  font-size: 22px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-header ul {
-  list-style: none;
-  padding: 0;
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: var(--background);
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-.address {
-  display: block;
-  font-size: 16px;
-}
-
-.buttons {
-  display: flex;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 5px;
-}
-
-.button {
-  display: block;
-  width: 140px;
-  height: 40px;
-  text-align: center;
-  font-size: 22px;
-  background-color: rgb(9, 65, 0);
-  /* color: #064d0d; */
-  color: white;
-  padding: 4px;
-  text-decoration: none;
-  float: left;
-  display: inherit;
   justify-content: center;
   align-items: center;
-}
-
-.button:hover {
-  /* background: linear-gradient(to left, #064d0d 0%, #063c08 50%, rgb(4, 24, 1) 100%); */
-  background: linear-gradient(rgb(2, 14, 0), rgb(2, 14, 0));
-  color: white;
-}
-
-.button:focus {
-  outline: none;
-  background-color: rgb(2, 14, 0);
-  color: white;
+  padding: 60px 20px;
 }
 
 .tiles {
-  display: flex;
-  margin: 15px auto 0;
-  height: 50px;
-  z-index: 1;
-  /* border: 8px solid #ceae78; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .tile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  vertical-align: middle;
+  background-color: var(--black);
+  color: var(--gold);
   text-decoration: none;
-  width: 180px;
-  height: 65px;
-  font-size: 22px;
-  /* padding: 0 10px; */
-  background: linear-gradient(rgb(214, 214, 214), rgb(214, 214, 214));
-  transition: rgb(198, 164, 151) 0.5s, rgb(160, 136, 126) 0.5s;
-  border: 1px solid rgb(84, 84, 84);
-  color: #064d0d;
-  float: left;
-  box-shadow: 2px 2px 2px rgb(13, 13, 13);
+  padding: 30px 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  white-space: pre-line;
 }
 
 .tile:hover {
-  /* background-color: #ceae78; */
-  /* background-color: rgb(145, 120, 110); */
-  /* background-color: rgb(198, 164, 151); */
-  background: repeating-linear-gradient(
-    rgb(198, 164, 151) 0%,
-    rgb(160, 136, 126) 10%
-  );
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-img {
-  width: 100%;
-  height: 40%;
-  box-shadow: 0 0 60px black;
+.spec-bottom {
+  font-style: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--black);
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Pojedyncze strony */
+main {
+  background-color: var(--gray);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  margin: 0 auto;
+  padding: 1rem;
+  color: var(--text-color);
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+.bankowe-list-ul {
+  list-style-type: disc;
+}
+
+/* Strona główna */
+.strona-glowna, .bankowe, .spadek, .cywilne, .umowy, .gospodarcze, .ofe {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits-list li::before {
+  content: "✓"; 
+  margin-right: 0.5em;
+}
+
+/* Linia na dole strony */
+.bottom-text {
+  border-top: var(--black) 1px solid;
+  padding-top: 20px;
+}
+
+/* O mnie */
+.o-mnie-heading {
+  font-size: 1.4rem;
 }
 
 .o-mnie img {
@@ -194,202 +218,182 @@ img {
 }
 
 .o-mnie ul {
-  list-style: circle;
   padding-left: 20px;
 }
 
-footer {
-  font-size: 16px;
+/* Contact */
+
+.contact-details {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+.contact-details a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.contact-and-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-container {
+  background-color: var(--gray);
+  width: 35%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form-container h2 {
   text-align: center;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-.space {
-  position: absolute;
-  bottom: 120px;
-  width: inherit;
-  height: 0;
-}
-
-.spadek {
-  width: 65%;
-  margin: 0 auto;
-}
-
-.inne {
+.contact-info {
   width: 50%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: var(--text-color);
+  text-align: start;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #b3afaf;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: var(--gold);
+  color: var(--text-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #9f893c;
+}
+
+/* Stopka */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--black);
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.footer-image {
+  display: block;
+  width: 60%;
   margin: 0 auto;
-  line-height: 150%;
-  font-size: 18px;
-  text-align: justify;
 }
 
-.foot {
-  border-top: 1px solid white;
-  padding-top: 10px;
-}
+@media only screen and (max-width: 950px) {
+  /* Header */
+  .header {
+    flex-direction: column-reverse;
+  }
 
-ul li {
-  list-style-type: disc;
-}
+  .menu {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
 
-.spadek ul li {
-  margin-bottom: 10px;
-}
+  .logo {
+    width: 90%;
+    height: auto;
+  }
 
-header ul li {
-  list-style-type: none;
-}
-
-@media only screen and (max-width: 710px) {
-  header {
+  .top-links {
     flex-direction: column;
-    position: static;
+    justify-content: center;
   }
 
-  .space {
-    bottom: 0;
-    height: 0;
+  .bottom-link {
+    display: flex;
+    justify-content: center;
   }
 
-  .address {
-    padding: 10px;
-    font-size: 16px;
+  /*Contact */
+  .contact-and-form {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
-  .full-name {
-    padding: 10px;
-    margin: 0;
+  .contact-details {
+    font-size: 1.2rem;
   }
 
-  .surname {
-    margin-left: 50px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  .buttons {
-    margin: 20px 0 20px 0;
-  }
-
-  .button {
-    width: 120px;
-    height: 30px;
-    font-size: 16px;
-  }
-
-  /* .banner{
-    width: 100%;
-    height: 280px;
-  } */
-
-  .banner:before {
+  .footer-image {
     width: 100%;
   }
 
-  .tiles {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto auto;
-    height: 120px;
+  .form-container {
+    width: 70%;
   }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+  /* Pojedyncze strony */
+  main{
+    font-size: 1.1rem;
+  }
+
+  /* Tiles */
 
   .tile {
-    width: 100px;
-    height: 40px;
-    font-size: 16px;
+    font-size: 1rem;
+    text-align: center;
   }
 
-  .o-mnie {
-    display: block;
+  /* Wspólny nagłówek */
+  .heading-text {
+    font-size: 2.5rem;
   }
-
-  .text {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .o-mnie img {
-    margin: 0 18px 18px 18px;
-    float: left;
-    width: 30%;
-    height: 80%;
-  }
-
-  .spadek {
-    width: 90%;
-    font-size: 16px;
-  }
-
-  ol {
-    padding: 10px;
-  }
-
-  .inne {
-    width: 80%;
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 711px) and (max-width: 1100px) {
-  .address {
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .full-name {
-    padding: 10px;
-    margin: 0;
-  }
-
-  .surname {
-    margin-left: 50px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  .buttons {
-    margin: 20px 0 20px 0;
-  }
-
-  .button {
-    width: 100px;
-    height: 30px;
-    font-size: 16px;
-  }
-
-  /* .banner{
-    width: 100%;
-    height: 400px;
-  } */
-
-  .space {
-    bottom: 150px;
-  }
-
-  .tiles {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: auto auto;
-    height: 130px;
-  }
-
-  .spadek {
-    width: 80%;
-    font-size: 16px;
-  }
-
-  .inne {
-    width: 70%;
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  /* .banner{
-    height: 800px;
-  } */
 }

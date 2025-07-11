@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import Menu from './components/Menu';
 import Home from './pages/Home'
-import Firma from './pages/Firma'
-import Inne from './pages/Inne'
-import Kredyty from './pages/Kredyty'
+import Gospodarcze from './pages/Gospodarcze'
+import Ofe from './pages/Ofe'
+import Bankowe from './pages/Bankowe'
 import OMnie from './pages/OMnie'
-import Rozwod from './pages/Rozwod'
+import Cywilne from './pages/Cywilne'
 import Spadek from './pages/Spadek'
 import Umowy from './pages/Umowy'
 
@@ -17,11 +17,11 @@ export default function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/firma" element={<Firma />} />
-          <Route path="/inne" element={<Inne />} />
-          <Route path="/kredyty" element={<Kredyty />} />
+          <Route path="/gospodarcze" element={<Gospodarcze />} />
+          <Route path="/ofe" element={<Ofe />} />
+          <Route path="/bankowe" element={<Bankowe />} />
           <Route path="/o-mnie" element={<OMnie />} />
-          <Route path="/rozwod" element={<Rozwod />} />
+          <Route path="/cywilne" element={<Cywilne />} />
           <Route path="/spadek" element={<Spadek />} />
           <Route path="/umowy" element={<Umowy />} />
         </Routes>
