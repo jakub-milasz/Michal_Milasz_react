@@ -365,7 +365,7 @@ button:hover {
   }
 
   .footer-image {
-    width: 100%;
+    width: 80%;
   }
 
   .form-container {
@@ -376,14 +376,32 @@ button:hover {
     flex-direction: column;
   }
 
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
   .footer {
     font-size: 14px;
   }
 
   /* Pojedyncze strony */
   main{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
+
+  .benefits-list li {
+    display: flex;
+    align-items: flex-start;
+  }
+
+
+  .benefits-list li::before {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+
 
   /* Tiles */
 

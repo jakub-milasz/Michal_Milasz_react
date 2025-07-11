@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="contact-and-form">
           <div class="form-container">
             <h2>Formularz kontaktowy</h2>
-            <form action="mailto:michal.milasz@adwokatura.pl" method="post">
+            <form action="https://formsubmit.co/michal.milasz@adwokatura.pl" method="post">
               <div class="form-group">
                 <div>
                   <label for="fname">Imię:</label>
