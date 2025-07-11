@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="contact-and-form">
           <div class="form-container">
             <h2>Formularz kontaktowy</h2>
-            <form action="#" method="post">
+            <form action="mailto:michal.milasz@adwokatura.pl" method="post">
               <div class="form-group">
                 <div>
                   <label for="fname">Imię:</label>
@@ -40,7 +40,7 @@ export default function Contact() {
           <div className="contact-info">
             <img src={stopka} alt="Stopka" className="footer-image" />
             <div className="contact-details">
-              <p><strong>Telefon: </strong> <a href="tel:+48123456789">783 273 664</a></p>
+              <p><strong>Telefon: </strong>783 273 664</p>
               <p><strong>Email: </strong>michal.milasz@adwokatura.pl</p>
               <p><strong>NIP: </strong>8692008386</p>
             </div>
