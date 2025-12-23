@@ -41,7 +41,7 @@ export default function Contact() {
             <img src={stopka} alt="Stopka" className="footer-image" />
             <div className="contact-details">
               <p><strong>Telefon: </strong>783 273 664</p>
-              <p><strong>Email: </strong>michal.milasz@adwokatura.pl</p>
+              <p><strong>E-mail: </strong>michal.milasz@adwokatura.pl</p>
               <p><strong>NIP: </strong>8692008386</p>
             </div>
           </div>

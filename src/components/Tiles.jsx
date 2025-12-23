@@ -16,14 +16,14 @@ export default function Tiles() {
           <a className="tile" href="spadek">
             Prawo spadkowe
           </a>
-          <a className="tile" href="umowy">
-            Prawo umów
-          </a>
           <a className="tile" href="gospodarcze">
             Prawo gospodarcze
           </a>
+          <a className="tile" href="umowy">
+            Odszkodowania<br />za przesył
+          </a>
           <a className="tile" href="ofe">
-            OFE
+            Zwrot pieniędzy<br />z OFE
           </a>
         </nav>
       </div>
