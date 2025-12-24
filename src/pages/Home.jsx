@@ -35,7 +35,7 @@ export default function Home() {
       </main>
       <Tiles />
       <Contact />
-      <footer class="footer">
+      <footer className="footer">
         &copy; 2025 Jakub Milasz. Wszelkie prawa zastrzeżone.
       </footer>
     </>

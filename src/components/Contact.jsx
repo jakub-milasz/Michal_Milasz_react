@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import stopka from "../img/stopka.png"; // Import the footer image
 
 export default function Contact() {
+  const [isAccepted, setIsAccepted] = useState(false);
+
+  const handleCheckboxChange = (e) => {
+    setIsAccepted(e.target.checked);
+  };
+
+  const handleSubmit = (e) => {
+    if (!isAccepted) {
+      alert("Musisz zaakceptować politykę prywatności!");
+      e.preventDefault();
+    }
+  };
+
   return (
     <>
       <div className="heading" id="kontakt">
         <h2 className="heading-text">Kontakt</h2>
         <div className="contact-and-form">
-          <div class="form-container">
+          <div className="form-container">
             <h2>Formularz kontaktowy</h2>
-            <form action="https://formsubmit.co/michal.milasz@adwokatura.pl" method="post">
-              <div class="form-group">
+            <form action="https://formsubmit.co/michal.milasz@adwokatura.pl" method="post" onSubmit={handleSubmit}>
+              <div className="form-group">
                 <div>
                   <label for="fname">Imię:</label>
                   <input type="text" id="fname" name="fname" required/>
@@ -20,7 +33,7 @@ export default function Contact() {
                   <input type="text" id="lname" name="lname" required/>
                 </div>
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <div>
                   <label for="phone">Numer telefonu:</label>
                   <input type="tel" id="phone" name="phone" pattern="[0-9+ ]+" required/>
@@ -33,7 +46,10 @@ export default function Contact() {
 
               <label for="message">Wiadomość:</label>
               <textarea id="message" name="message" required></textarea>
-
+              <div className="acceptance">
+                <input type="checkbox" id="consent" name="consent" onChange={handleCheckboxChange} checked={isAccepted} required/>
+                <label for="consent">Wyrażam zgodę na przetwarzanie moich danych osobowych (imię, nazwisko, e-mail, nr telefonu) przez Administratora w celu udzielenia odpowiedzi na moje zapytanie przesłane przez formularz kontaktowy. Zapoznałem/am się z <a href="/polityka-prywatnosci" target="_blank" rel="noopener noreferrer">Polityką Prywatności</a>.</label>
+              </div>
               <button type="submit">Wyślij</button>
             </form>
           </div>

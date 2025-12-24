@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap');
+
 :root {
   --gold: #c5a059;
   --gold-light: #f5e1a4;
@@ -14,8 +16,6 @@ body {
 }
 
 /* Header css */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap');
 
 .navbar-container {
   position: sticky;
@@ -78,7 +78,7 @@ body {
     linear-gradient(to bottom, var(--black) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.7) 60%, var(--black) 100%),
     url('img/tlo.png') no-repeat center center;
   background-size: cover;
-  border-bottom: 2px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
 }
 
 .hero-column {
@@ -311,6 +311,31 @@ main {
   margin-bottom: 20px;
 }
 
+.acceptance {
+  line-height: 1.4;
+}
+
+#consent {
+  float: left;             
+  width: 14px;             
+  height: 14px;
+  margin-right: 10px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.acceptance label {
+  display: block;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.acceptance::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .contact-info {
   width: 50%;
 }
@@ -320,7 +345,7 @@ label {
   margin-bottom: 5px;
   margin-top: 15px;
   color: var(--text-color);
-  text-align: start;
+  text-align: justify;
 }
 
 input, textarea {

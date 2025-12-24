@@ -8,6 +8,7 @@ import OMnie from './pages/OMnie'
 import Cywilne from './pages/Cywilne'
 import Spadek from './pages/Spadek'
 import Przesyl from './pages/Przesyl'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/cywilne" element={<Cywilne />} />
           <Route path="/spadek" element={<Spadek />} />
           <Route path="/przesyl" element={<Przesyl />} />
+          <Route path="/polityka-prywatnosci" element={<PrivacyPolicy />} />
         </Routes>
       </BrowserRouter>
     </>
