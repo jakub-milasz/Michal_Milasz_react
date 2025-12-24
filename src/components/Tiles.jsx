@@ -19,7 +19,7 @@ export default function Tiles() {
           <a className="tile" href="gospodarcze">
             Prawo gospodarcze
           </a>
-          <a className="tile" href="umowy">
+          <a className="tile" href="przesyl">
             Odszkodowania<br />za przesył
           </a>
           <a className="tile" href="ofe">

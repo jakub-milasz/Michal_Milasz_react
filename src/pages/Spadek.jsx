@@ -8,19 +8,47 @@ export default function Spadek() {
      <Header/>
       <main>
         <div className="spadek">
-          <p>Postępowanie dotyczące majątku spadkowego co do zasady można podzielić na dwa etapy:</p>
-          <ol>
-            <u><li>Stwierdzenie nabycia spadku</li></u>
-            <p>Postępowanie o stwierdzenie nabycia spadku ma na celu ustalenie kto dziedziczy po zmarłym i w jakiej części. Na tym etapie Sąd bada też ważność testamentu, jeżeli takowy został sporządzony. Sąd co do zasady nie ustala w tym postępowaniu, co wchodzi w skład majątku spadkowego.</p>
-            <p>Sprawa kończy się wydaniem postanowienia o stwierdzeniu nabycia spadku. Jest to dokument konieczny między innymi, aby dokonać zmian w księdze wieczystej, sprzedać samochód lub nieruchomość.</p>
-            <p>Zamiast drogi sądowej można wybrać drogę notarialną. Notariusz, podobnie jak sąd, ustali spadkobierców i ich udziały, a następnie sporządzi akt poświadczenia dziedziczenia. Moc prawna takiego aktu jest równa mocy postanowienia sądu o stwierdzeniu nabycia spadku.</p>
-            <p>Po uzyskaniu postanowienia o stwierdzeniu nabycia spadku lub aktu poświadczenia dziedziczenia konieczne jest dokonanie zgłoszenia w urzędzie skarbowym.</p>
-            <u><li>Dział spadku</li></u>
-            <p>Jeżeli spadek dziedziczy więcej niż jedna osoba, często konieczne jest dokonanie również działu spadku. Celem tego postępowania jest ustalenie co wchodzi w skład spadku (np. ruchomości, nieruchomości, przedsiębiorstwo, prawa autorskie), a następnie jego podział stosownie do udziałów poszczególnych spadkobierców.</p>
-            <p>Sprawa kończy się wydaniem postanowienia o dziale spadku. Dokument ten wyraźnie opisuje, co otrzymuje każdy ze spadkobierców.</p>
-            <p>Również w tej sprawie można udać się do notariusza w celu sporządzenia odpowiedniej umowy. Z takiej możliwości mogą skorzystać tylko spadkobiercy, którzy są zgodni co do podziału majątku spadkowego. W przypadku, gdy istnieją jakiekolwiek spory, właściwym trybem jest wyłącznie tryb sądowy.</p>
-          </ol>
-          <p className="bottom-text">Podczas naszej rozmowy doradzę, która droga będzie najlepsza z punktu widzenia Twojej sprawy. Przedstawię cały proces, wysokość opłat sądowych i szacowany czas rozstrzygnięcia.</p>
+          <h2>Sprawy spadkowe – bezpieczeństwo prawne i wsparcie w
+              trudnym czasie</h2>
+          <p>
+            Śmierć bliskiej osoby to zawsze trudne doświadczenie. Niestety, jest to również moment, w
+            którym konieczne staje się dopełnienie wielu formalności prawnych. Przepisy prawa
+            spadkowego bywają skomplikowane, a emocje towarzyszące sprawom rodzinnym często
+            utrudniają racjonalne decyzje. Nasza Kancelaria oferuje kompleksową pomoc prawną,
+            przejmując na siebie ciężar prowadzenia spraw urzędowych i sądowych, co pozwala
+            Klientom skupić się na tym, co najważniejsze.
+          </p>
+          <h3>Uporządkowanie spraw po zmarłym</h3>
+          <p>
+            Pomagamy w podstawowych procedurach związanych z potwierdzeniem praw do spadku.
+            Reprezentujemy Klientów w postępowaniach o <b>stwierdzenie nabycia spadku</b> przed sądem
+            oraz asystujemy przy uzyskiwaniu notarialnego <b>aktu poświadczenia dziedziczenia</b>.
+          </p>
+          <p>
+            Kluczowym aspektem naszej pracy jest dbałość o bezpieczeństwo finansowe spadkobierców.
+            Doradzamy, w jakiej formie przyjąć spadek (wprost czy z dobrodziejstwem inwentarza), a w
+            przypadku zadłużenia zmarłego – pomagamy w terminowym <b>odrzuceniu spadku</b>, chroniąc
+            majątek prywatny Klienta przed wierzycielami.
+          </p>
+          <h3>Zachowek i dział spadku</h3>
+          <p>
+            Wiele spraw spadkowych wiąże się z konfliktami rodzinnymi. Specjalizujemy się w
+            dochodzeniu roszczeń o <b>zachowek</b> – instytucji chroniącej bliskich pominiętych w
+            testamencie. Obliczamy wysokość należnego świadczenia i skutecznie egzekwujemy je od
+            spadkobierców testamentowych. Równie często prowadzimy sprawy o <b>dział spadku</b>. Kiedy
+            współwłaściciele nie mogą dojść do porozumienia co do podziału majątku (nieruchomości,
+            oszczędności), dążymy do wypracowania ugody lub reprezentujemy interesy Klienta w
+            sądzie, walcząc o sprawiedliwe rozliczenie nakładów i podział aktywów.
+          </p>
+          <h3>Testamenty i planowanie spadkowe</h3>
+          <p>
+            Działamy również prewencyjnie. Doradzamy, jak sporządzić ważny i skuteczny <b>testament</b>,
+            w tym testament z zapisami windykacyjnymi czy wydziedziczeniem, aby wola spadkodawcy
+            została w przyszłości w pełni uszanowana.
+          </p>
+          <p>
+            Zapraszamy do kontaktu. Gwarantujemy dyskrecję, taktowne podejście i pełne zaangażowanie w każdą powierzoną sprawę.
+          </p>
         </div>
       </main>
       <Tiles />
