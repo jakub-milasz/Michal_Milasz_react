@@ -1,13 +1,24 @@
 import Header from "../components/Header";
 import Tiles from "../components/Tiles";
 import Contact from "../components/Contact";
+import { useEffect, useRef } from "react";
 
 
 export default function Bankowe() {
+  const mainRef = useRef(null);
+  
+    useEffect(() => {
+      if (mainRef.current) {
+        mainRef.current.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      }
+    }, []);
   return (
     <>
       <Header />
-      <main>
+      <main ref={mainRef}>
         <div className="bankowe">
           <h2>Spory z bankami i ochrona dłużników – odzyskaj pieniądze i spokój</h2>
           <p>
@@ -22,16 +33,13 @@ export default function Bankowe() {
             Głównym filarem naszej praktyki jest pomoc tzw. „frankowiczom”. Prowadzimy sprawy
             dotyczące kredytów waloryzowanych do waluty obcej, dążąc do unieważnienia wadliwych
             umów zawierających klauzule niedozwolone. Co istotne, pomoc prawną oferujemy nie tylko
-            posiadaczom <b>czynnych kredytów</b>, ale także osobom, które swoje zobowiązanie już
-            <b>całkowicie spłaciły</b> (zamknęły kredyt). W obu przypadkach walczymy o zwrot nienależnie
+            posiadaczom <b>czynnych kredytów</b>, ale także osobom, które swoje zobowiązanie już <b>całkowicie spłaciły</b> (zamknęły kredyt). W obu przypadkach walczymy o zwrot nienależnie
             pobranych przez bank środków i definitywne uwolnienie Klienta od toksycznego produktu
             finansowego.
           </p>
           <h3>Pożyczki i kredyty konsumenckie</h3>
           <p>
-            Analizujemy również umowy kredytów gotówkowych i tzw. „chwilówek” pod kątem
-            <b>klauzul abuzywnych</b>. Często zdarza się, że pożyczkodawcy naliczają rażąco wygórowane
-            <b>prowizje</b> oraz inne pozaodsetkowe koszty kredytu, drastycznie zawyżając rzeczywiste
+            Analizujemy również umowy kredytów gotówkowych i tzw. „chwilówek” pod kątem <b>klauzul abuzywnych</b>. Często zdarza się, że pożyczkodawcy naliczają rażąco wygórowane <b>prowizje</b> oraz inne pozaodsetkowe koszty kredytu, drastycznie zawyżając rzeczywiste
             zadłużenie. W takich sytuacjach dążymy do odzyskania nadpłaconych kwot.
           </p>
           <h3>Nakaz zapłaty – skuteczna obrona</h3>

@@ -1,14 +1,26 @@
 import Header from "../components/Header";
 import Tiles from "../components/Tiles";
 import Contact from "../components/Contact";
+import { useEffect, useRef } from "react";
+
 
 export default function Gospodarcze() {
+  const mainRef = useRef(null);
+  
+    useEffect(() => {
+      if (mainRef.current) {
+        mainRef.current.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      }
+    }, []);
   return (
     <>
       <Header />
-      <main>
+      <main ref={mainRef}>
         <div className="gospodarcze">
-          <h3>Kompleksowe wsparcie prawne dla biznesu – od startu po rozwój</h3>
+          <h2>Kompleksowe wsparcie prawne dla biznesu – od startu po rozwój</h2>
           <p>
             Prowadzenie firmy w gąszczu dynamicznie zmieniających się przepisów wymaga solidnego
             zaplecza merytorycznego. Nasza Kancelaria od kilku lat jest zaufanym partnerem dla
@@ -24,8 +36,7 @@ export default function Gospodarcze() {
             niekorzystne klauzule.
           </p>
           <p>
-            Wspieramy przedsiębiorców w spełnianiu wymogów formalnych – tworzymy i wdrażamy
-            <b>regulaminy</b> świadczenia usług, <b>polityki prywatności</b> oraz pełną dokumentację z zakresu
+            Wspieramy przedsiębiorców w spełnianiu wymogów formalnych – tworzymy i wdrażamy <b>regulaminy</b> świadczenia usług, <b>polityki prywatności</b> oraz pełną dokumentację z zakresu
             ochrony danych osobowych <b>(RODO)</b> i plików cookies. Gdy pojawiają się zatory płatnicze,
             działamy stanowczo – zajmujemy się skuteczną <b>windykacją należności</b> od nierzetelnych
             kontrahentów, dbając o płynność finansową naszych Klientów.

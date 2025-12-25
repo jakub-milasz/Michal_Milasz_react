@@ -1,12 +1,23 @@
 import Header from "../components/Header";
 import Tiles from "../components/Tiles";
 import Contact from "../components/Contact";
+import { useEffect, useRef } from "react";
 
 export default function Przesyl() {
+  const mainRef = useRef(null);
+  
+    useEffect(() => {
+      if (mainRef.current) {
+        mainRef.current.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      }
+    }, []);
   return (
     <>
       <Header />
-      <main>
+      <main ref={mainRef}>
         <div className="przesyl">
           <h2>Infrastruktura przesyłowa na Twoim gruncie – zadbaj o należne wynagrodzenie</h2>
           <p>
@@ -28,8 +39,7 @@ export default function Przesyl() {
           </p>
           <h3>Ustanowienie służebności przesyłu (na przyszłość)</h3>
           <p>
-            Drugim filarem naszych działań jest uregulowanie stanu prawnego na przyszłość poprzez
-            <b>ustanowienie służebności przesyłu</b>. Dążymy do zawarcia umowy (lub uzyskania orzeczenia
+            Drugim filarem naszych działań jest uregulowanie stanu prawnego na przyszłość poprzez <b>ustanowienie służebności przesyłu</b>. Dążymy do zawarcia umowy (lub uzyskania orzeczenia
             sądowego), na mocy której przedsiębiorca uzyskuje prawo dostępu do urządzeń, ale w
             zamian ma obowiązek wypłacić właścicielowi <b>odpowiednie wynagrodzenie</b> (jednorazowe
             lub okresowe). Kwota ta ma rekompensować trwale ograniczone prawo własności i obniżoną

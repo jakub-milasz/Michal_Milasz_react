@@ -5,10 +5,19 @@
   --gold-light: #f5e1a4;
   --gold-dark: #8a6d3b;
   --black: #000000;
-  --gray: #f2f2f2; /* Zakładam na podstawie Twojego kodu */
+  --gray: #f3f0ee;
   --text-color: #333;
-  font-family: 'Montserrat', serif;
+  font-family: 'Garamond';
   scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
@@ -50,6 +59,15 @@ body {
   align-items: center;
 }
 
+.nav-item:nth-child(3) {
+  white-space: nowrap;
+}
+
+main {
+  text-wrap: pretty;
+  scroll-margin-top: 8vh;
+}
+
 .nav-item a {
   text-decoration: none;
   color: var(--gold);
@@ -81,23 +99,19 @@ body {
   border-bottom: 3px solid var(--gold);
 }
 
-.hero-column {
-  flex: 0 0 50%;
-  /* padding: 0 5%; */
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-}
-
 .hero-text-wrapper {
   text-align: center;
   color: white;
+  padding-left: 50px;
 }
 
 .hero-title {
   font-size: 2rem;
   margin: 0;
   white-space: nowrap;
+  font-weight: normal;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .fading-gold-line {
@@ -108,20 +122,29 @@ body {
   background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--gold), transparent);
 }
 
+h2 {
+  text-align: center;
+}
+
 .hero-subtitle {
   font-size: 1rem;
-  font-style: italic;
   opacity: 0.9;
   line-height: 1.6;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1s both;
 }
 
 .logo-img {
-  display: block;      
-  margin: 0 auto;
-  max-width: 85%;
+  max-width: 60%;
   height: auto;
-  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
+
+/* p {
+  font-size: 1rem;
+} */
 
 /* Tiles css */
 
@@ -214,7 +237,7 @@ main {
 }
 
 /* Strona główna */
-.strona-glowna, .bankowe, .spadek, .cywilne, .umowy, .gospodarcze, .ofe {
+.strona-glowna, .bankowe, .spadek, .cywilne, .przesyl, .gospodarcze, .ofe {
   width: 80%;
   margin: 0 auto;
 }
@@ -230,9 +253,21 @@ main {
 }
 
 /* Linia na dole strony */
-.bottom-text {
-  border-top: var(--black) 1px solid;
-  padding-top: 20px;
+ .bottom-text {
+  border-top: none; 
+  
+  background-image: linear-gradient(
+    to right, 
+    transparent, 
+    #c7c4c4 5%, 
+    #c7c4c4 95%, 
+    transparent
+  );
+  
+  background-position: top center; 
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  padding-top: 20px; 
 }
 
 /* O mnie */
@@ -395,9 +430,79 @@ button:hover {
   margin: 0 auto;
 }
 
-u {
-  text-underline-offset: 8px;
-  text-decoration-color: var(--text-color);
+.header-with-line {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.header-with-line span {
+  display: inline-block;
+  padding-bottom: 5px;
+  background-image: linear-gradient(
+    to right, 
+    transparent, 
+    #c7c4c4 5%, 
+    #c7c4c4 95%, 
+    transparent
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: bottom;
+}
+
+.header-with-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right, 
+    transparent, 
+    #c7c4c4 5%, 
+    #c7c4c4 95%, 
+    transparent
+  );
+}
+
+/* Klasa tylko do podkreślenia tekstu */
+.underline-text {
+  display: inline-block;
+  padding-bottom: 5px;
+  background-image: linear-gradient(
+    to right, 
+    transparent, 
+    #c7c4c4 5%, 
+    #c7c4c4 95%, 
+    transparent
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: bottom;
+}
+
+.underline-paragraph {
+  /* Resetujemy domyślne dekoracje */
+  text-decoration: none;
+  
+  /* Twoje parametry gradientu */
+  background-image: linear-gradient(
+    to right, 
+    transparent, 
+    #c7c4c4 5%, 
+    #c7c4c4 95%, 
+    transparent
+  );
+  
+  background-repeat: no-repeat;
+  background-size: 100% 1px; /* Linia na całą szerokość, grubość 1px */
+  
+  /* Pozycjonowanie i odstęp */
+  background-position: bottom center; 
+  padding-bottom: 20px; /* Zwiększaj tę wartość, aby odsunąć linię niżej */
+  
+  /* Dodatkowy margines, żeby linia nie dotykała elementów poniżej */
+  margin-bottom: 20px; 
 }
 
 @media only screen and (max-width: 950px) {
@@ -406,11 +511,6 @@ u {
     flex-direction: column;
     padding: 60px 0;
     text-align: center;
-  }
-
-  .hero-column {
-    flex: 0 0 100%;
-    padding: 20px;
   }
 
   .hero-title {
@@ -423,9 +523,19 @@ u {
     padding-left: 0;
   }
 
+  .navbar-container {
+    padding: 0;
+  }
+
+  .nav-menu {
+    width: 100%; /* Upewniamy się, że menu zajmuje całą szerokość */
+  }
+
   .nav-item a {
     padding: 0 10px;
     font-size: 0.7rem;
+    flex: 1;          /* Każdy z 4 elementów zajmie 25% szerokości */
+    text-align: center; /* Opcjonalne: wyśrodkowanie tekstu wewnątrz linku */
   }
 
   /*Contact */

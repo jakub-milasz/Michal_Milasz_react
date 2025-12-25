@@ -1,12 +1,24 @@
 import Header from "../components/Header";
 import Tiles from "../components/Tiles";
 import Contact from "../components/Contact";
+import { useEffect, useRef } from "react";
+
 
 export default function Spadek() {
+  const mainRef = useRef(null);
+  
+    useEffect(() => {
+      if (mainRef.current) {
+        mainRef.current.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      }
+    }, []);
   return (
     <>
      <Header/>
-      <main>
+      <main ref={mainRef}>
         <div className="spadek">
           <h2>Sprawy spadkowe – bezpieczeństwo prawne i wsparcie w
               trudnym czasie</h2>

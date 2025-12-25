@@ -60,7 +60,7 @@ export default function Contact() {
               <p><strong>E-mail: </strong>michal.milasz@adwokatura.pl</p>
               <p><strong>NIP: </strong>8692008386</p>
               <p><strong>Adres</strong><br/>ul. Miodowa 26 lok. 1.4<br/>31-055 Kraków</p>
-              <p>Filia Kancelarii ul. Piłkarska 25<br/>32-800 Brzesko (Bucze)</p>
+              <p><strong>Filia Kancelarii</strong><br/>ul. Piłkarska 25<br/>32-800 Brzesko (Bucze)</p>
             </div>
           </div>
         </div>

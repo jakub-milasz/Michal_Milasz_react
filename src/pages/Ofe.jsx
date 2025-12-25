@@ -1,14 +1,26 @@
 import Header from "../components/Header";
 import Tiles from "../components/Tiles";
 import Contact from "../components/Contact";
+import { useEffect, useRef } from "react";
+
 
 export default function Ofe() {
+  const mainRef = useRef(null);
+  
+    useEffect(() => {
+      if (mainRef.current) {
+        mainRef.current.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      }
+    }, []);
   return (
     <>
       <Header />
-      <main>
+      <main ref={mainRef}>
         <div className="ofe">
-          <h3>Zwrot środków z OFE przekazanych do ZUS – pieniądze Twoich bliskich nie przepadły</h3>
+          <h2>Zwrot środków z OFE przekazanych do ZUS – pieniądze Twoich bliskich nie przepadły</h2>
           <p>
             Jeżeli Twój bliski był członkiem Otwartego Funduszu Emerytalnego (OFE) i zmarł przed
             przejściem na emeryturę lub pobierał świadczenie emerytalne nie dłużej niż 3 lata, wówczas

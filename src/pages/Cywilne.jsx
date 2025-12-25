@@ -1,12 +1,23 @@
 import Header from "../components/Header";
 import Contact from "../components/Contact";
-import Tiles from "../components/Tiles";import { useEffect, useRef } from "react";
+import Tiles from "../components/Tiles";
+import { useEffect, useRef } from "react";
 
 export default function Cywilne() {
+  const mainRef = useRef(null);
+
+  useEffect(() => {
+    if (mainRef.current) {
+      mainRef.current.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+  }, []);
   return (
     <>
       <Header />
-      <main>
+      <main ref={mainRef}>
         <div className="cywilne">
           <h2>Prawo Cywilne – wszechstronna pomoc w sprawach codziennych i majątkowych</h2>
           <p>
@@ -20,9 +31,8 @@ export default function Cywilne() {
           <h3>Nieruchomości i prawa konsumenta</h3>
           <p>
             Ważnym filarem naszej działalności jest <b>prawo nieruchomości</b>. Pomagamy uregulować
-            skomplikowane stany prawne gruntów i budynków. Prowadzimy postępowania o
-            <b>zasiedzenie</b>, pozwalające usankcjonować wieloletnie posiadanie nieruchomości, oraz sprawy
-            o <b>rozgraniczenie</b>, gdy przebieg granic działki jest sporny.
+            skomplikowane stany prawne gruntów i budynków. Prowadzimy postępowania o <b>zasiedzenie</b>, pozwalające usankcjonować wieloletnie posiadanie nieruchomości, oraz sprawy
+            o <b>rozgraniczenie</b>, gdy przebieg granic działki jest sporny.
           </p>
           <p>
             Stoimy również na straży praw słabszych uczestników rynku. W ramach <b>prawa konsumenckiego</b> doradzamy w sporach z nieuczciwymi sprzedawcami i usługodawcami,
