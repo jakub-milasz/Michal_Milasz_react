@@ -61,9 +61,11 @@ export default function Contact() {
               <p><strong>NIP: </strong>8692008386</p>
               <p><strong>Adres</strong><br/>ul. Miodowa 26 lok. 1.4<br/>31-055 Kraków</p>
               <p><strong>Filia Kancelarii</strong><br/>ul. Piłkarska 25<br/>32-800 Brzesko (Bucze)</p>
+              <a className="privacy-policy-link" href="/polityka-prywatnosci" target="_blank" rel="noopener noreferrer">Polityka Prywatności</a>
             </div>
           </div>
         </div>
+        <footer className="footer"> &copy; 2025 Jakub Milasz. Wszelkie prawa zastrzeżone. </footer>
       </div>
     </>
   );

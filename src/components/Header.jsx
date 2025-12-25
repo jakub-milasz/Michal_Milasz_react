@@ -15,8 +15,10 @@ export default function Header() {
 
       <header className="hero-section">
         <div className="hero-text-wrapper">
-          <h1 className="hero-title">Zaufanie. Doświadczenie. Skuteczność.</h1>
-          <div className="fading-gold-line"></div>
+          <div className='title-underline'>
+            <h1 className="hero-title">Zaufanie. Doświadczenie. Skuteczność.</h1>
+            <div className="fading-gold-line"></div>
+          </div>
           <p className="hero-subtitle">
             Reprezentujemy Klientów z pełnym zaangażowaniem,<br />
             oferując kompleksową pomoc prawną.

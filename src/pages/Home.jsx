@@ -31,9 +31,6 @@ export default function Home() {
       <Tiles />
       <Contact />
       <CookieBanner />
-      <footer className="footer">
-        &copy; 2025 Jakub Milasz. Wszelkie prawa zastrzeżone.
-      </footer>
     </>
   );
 }
