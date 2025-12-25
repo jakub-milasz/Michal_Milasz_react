@@ -7,7 +7,8 @@ import Bankowe from './pages/Bankowe'
 import OMnie from './pages/OMnie'
 import Cywilne from './pages/Cywilne'
 import Spadek from './pages/Spadek'
-import Umowy from './pages/Umowy'
+import Przesyl from './pages/Przesyl'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 
 export default function App() {
@@ -23,7 +24,8 @@ export default function App() {
           <Route path="/o-mnie" element={<OMnie />} />
           <Route path="/cywilne" element={<Cywilne />} />
           <Route path="/spadek" element={<Spadek />} />
-          <Route path="/umowy" element={<Umowy />} />
+          <Route path="/przesyl" element={<Przesyl />} />
+          <Route path="/polityka-prywatnosci" element={<PrivacyPolicy />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -5,14 +5,24 @@ import profilowe from "../img/profilowe.jpg";
 import { useEffect, useRef } from "react";
 
 export default function OMnie() {
+  const mainRef = useRef(null);
+
+  useEffect(() => {
+    if (mainRef.current) {
+      mainRef.current.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+  }, []);
   return (
     <>
       <Header />
-      <main>
+      <main ref={mainRef}>
         <div className="o-mnie">
           <img src={profilowe} alt="Zdjęcie profilowe" />
           <div className="text">
-            <u className="o-mnie-heading">Wykształcenie:</u>
+            <b className="o-mnie-heading header-with-line"><span>Wykształcenie</span></b>
             <p>
               Jestem adwokatem oraz absolwentem prawa Uniwersytetu Jagiellońskiego. Swoją pracę magisterską, tworzoną pod okiem prof. Mirosława Steca, obroniłem w Katedrze Prawa Gospodarczego.
             </p>
@@ -28,54 +38,14 @@ export default function OMnie() {
               Z.&nbsp;Ćwiąkalski, J.&nbsp;Górski sp.k., w której odbywałem również
               praktyki.
             </p>
-            <u className="o-mnie-heading">Doświadczenie:</u>
+            <b className="o-mnie-heading header-with-line"><span>Doświadczenie</span></b>
             <p>
-              Specjalizuję się w prawie cywilnym, w tym w szczególności prawie
-              bankowym i konsumenckim. W swojej dotychczasowej karierze zawodowej
-              sporządziłem setki pism procesowych i opinii prawnych w zakresie:
+              Moja praktyka zawodowa koncentruje się wokół szeroko pojętego prawa cywilnego. Nie jestem teoretykiem – doświadczenie buduję na sali sądowej i w codziennej pracy z dokumentacją prawną. W dotychczasowej karierze sporządziłem tysiące pism procesowych i opinii prawnych, co pozwala mi precyzyjnie formułować argumenty i przewidywać ruchy strony przeciwnej. Setki razy reprezentowałem Klientów przed sądami, skutecznie walcząc o ich interesy w skomplikowanych sporach cywilnych i gospodarczych.
             </p>
-            <ul>
-              <li>
-                stwierdzenia bezskuteczności niedozwolonych postanowień zawartych
-                w umowach pożyczek;
-              </li>
-              <li>
-                odzyskiwania zwrotu części prowizji dla konsumenta za wcześniejszą
-                spłatę kredytu;
-              </li>
-              <li>unieważniania tzw. kredytów frankowych;</li>
-            </ul>
-
             <p>
-              <b>Doradzam przedsiębiorcom</b> – spółkom kapitałowym i osobowym, jak również jednoosobowym działalnościom gospodarczym, głównie w zakresie:
+              Równolegle od 5 lat sprawuję nadzór merytoryczny nad działami prawnymi spółek kapitałowych. Odpowiedzialność ta nauczyła mnie łączyć rygorystyczne wymogi prawne z realiami prowadzenia biznesu. Dzięki temu moi Klienci otrzymują wsparcie, które jest nie tylko zgodne z literą prawa, ale przede wszystkim skuteczne i użyteczne biznesowo.
             </p>
-            <ul>
-              <li>
-                sporządzania regulaminów i polityki prywatności (RODO, pliki cookies);
-              </li>
-              <li>
-                analizy umów z zakresu finansowania inwestycji, m.in. umów kredytowych, umów cesji wierzytelności;
-              </li>
-              <li>
-                prowadzenia działań przedsądowych i sądowych mających na celu odzyskanie środków od dłużników;
-              </li>
-              <li>zakładania działalności gospodarczej w CEIDG;</li>
-              <li>
-                zakładania spółki lub zmiany umowy spółki;
-              </li>
-            </ul>
-            <p>
-              <b>Doradzam osobom fizycznym</b> – posiadam szerokie doświadczenie w
-              zakresie spraw spadkowych, działowych, lokatorskich. Wielokrotnie
-              zajmowałem się sprawami dotyczącymi:
-            </p>
-            <ul>
-              <li>stwierdzenia nabycia spadku;</li>
-              <li>działu spadku i zniesienia współwłasności;</li>
-              <li>zasiedzenia nieruchomości;</li>
-              <li>opiniowania i sporządzania umów najmu lokalu, sprzedaży mieszkania;</li>
-            </ul>
-            <u className="o-mnie-heading">Pozostałe informacje o mnie:</u>
+            <b className="o-mnie-heading header-with-line"><span>Pozostałe informacje o mnie</span></b>
             <ul>
               <li>
                 Stypendysta Rektora Uniwersytetu Jagiellońskiego dla najlepszych

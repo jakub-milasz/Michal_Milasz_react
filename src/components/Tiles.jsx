@@ -7,23 +7,23 @@ export default function Tiles() {
       </div>
       <div className="banner">
         <nav className="tiles">
-          <a className="tile" href="bankowe">
-            Prawo bankowe
+          <a className="tile" href="spadek">
+            Prawo spadkowe
           </a>
           <a className="tile" href="cywilne">
             Prawo cywilne
           </a>
-          <a className="tile" href="spadek">
-            Prawo spadkowe
-          </a>
-          <a className="tile" href="umowy">
-            Prawo umów
+          <a className="tile" href="bankowe">
+            Kredyty i pożyczki
           </a>
           <a className="tile" href="gospodarcze">
             Prawo gospodarcze
           </a>
+          <a className="tile" href="przesyl">
+            Odszkodowania<br />za przesył
+          </a>
           <a className="tile" href="ofe">
-            OFE
+            Zwrot pieniędzy<br />z OFE
           </a>
         </nav>
       </div>

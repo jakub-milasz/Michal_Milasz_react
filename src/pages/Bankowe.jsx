@@ -1,51 +1,57 @@
 import Header from "../components/Header";
 import Tiles from "../components/Tiles";
 import Contact from "../components/Contact";
+import { useEffect, useRef } from "react";
 
 
 export default function Bankowe() {
+  const mainRef = useRef(null);
+  
+    useEffect(() => {
+      if (mainRef.current) {
+        mainRef.current.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      }
+    }, []);
   return (
     <>
       <Header />
-      <main>
+      <main ref={mainRef}>
         <div className="bankowe">
+          <h2>Spory z bankami i ochrona dłużników – odzyskaj pieniądze i spokój</h2>
           <p>
-            Klikając w tę sekcję, prawdopodobnie szukasz pomocy w jednej z dwóch sytuacji:
+            Relacje na linii kredytobiorca–bank czy kredytobiorca–firma pożyczkowa rzadko są
+            równorzędne. Instytucje finansowe często wykorzystują swoją pozycję, stosując w umowach
+            zapisy niezgodne z prawem. Nasza Kancelaria skutecznie przywraca równowagę,
+            reprezentując interesy kredytobiorców w sporach dotyczących kredytów konsumenckich
+            złotówkowych, jak i waloryzowanych do waluty obcej.
           </p>
-          <ol>
-            <u>
-              <li>
-                Otrzymałeś oświadczenie o wypowiedzeniu umowy lub sądowy nakaz zapłaty
-              </li>
-            </u>
-            <p>
-              W tej sytuacji ważne są terminy. Zwłaszcza, gdy doręczono już nakaz zapłaty. Aby uniknąć jego prawomocności i egzekucji komorniczej, należy złożyć środek zaskarżenia w terminie wskazanym przez sąd (zazwyczaj 14 dni od momentu doręczenia nakazu).
-            </p>
-            <p>
-              Bardzo często po złożeniu środka zaskarżenia, na etapie dalszego postępowania sądowego udaje się zmniejszyć kwotę zadłużenia, która widniała na nakazie zapłaty. Umowy kredytowe często zawierają bowiem niedozwolone postanowienia umowne w zakresie opłat i prowizji, które mogą zostać uznane za bezskuteczne. Ponadto, składając środek zaskarżenia od nakazu zapłaty można wnieść o rozłożenie zadłużenia na raty tak, by nie narazić się na egzekucję komorniczą.
-            </p>
-            <u>
-              <li>
-                Masz umowę i chciałbyś sprawdzić czy jej postanowienia są zgodne z prawem
-              </li>
-            </u>
-            <p>
-              Problem może dotyczyć wielu umów i wielu sytuacji. Rozpoczynając od tzw. kredytów frankowych, przez umowy pożyczki z wygórowanymi opłatami, aż po umowy niespełniające wymagań ustawowych, które umożliwiają skorzystanie z sankcji kredytu darmowego.
-            </p>
-            <ul class="bankowe-list-ul">
-              <li>
-                Kredyty frankowe to przez ostatnie lata najczęściej omawiany temat dotyczący sektora finansowego. Zawarte w umowach postanowienia, zgodnie z którymi to bank ustalał kursy walutowe, po których dochodziło do wypłaty i spłaty kredytu, w zdecydowanej większości dają możliwość unieważnienia umowy w całości. Sprawa może dotyczyć zarówno kredytów, które są nadal spłacane, jak i tych, które zostały już zamknięte. W obu przypadkach można domagać się zwrotu nadpłaconych kwot.
-              </li>
-              <li>
-                Nierzadko banki, a w szczególności tzw. parabanki, naliczają wygórowane opłaty i prowizje za udzielenie pożyczki. W wielu sytuacjach kwota jest na tyle duża, że sąd może uznać takie postanowienie za niedozwolone i bezskuteczne w stosunku do kredytobiorcy. W takiej sytuacji istnieje więc szansa obniżenia kwoty zadłużenia i zmniejszenia comiesięcznego obciążenia budżetu.
-              </li>
-              <li>
-                W ostatnim czasie na popularności zyskuje także instytucja sankcji kredytu darmowego. Skorzystać z niej mogą kredytobiorcy, których umowa nie spełnia wymagań wskazanych w ustawie o kredycie konsumenckim. W takiej sytuacji należy w odpowiednim terminie złożyć oświadczenie o skorzystaniu z sankcji kredytu darmowego. Po skutecznym złożeniu takiego oświadczenia, kredytobiorca zwraca wyłącznie kwotę kapitału, bez odsetek, prowizji i innych opłat. W większości przypadków Bank nie zaakceptuje złożonego oświadczenia, wobec czego konieczne będzie wytoczenie powództwa i przeprowadzenie postępowania przed sądem.
-              </li>
-            </ul>
-          </ol>
-          <p className="bottom-text">
-            Każda sprawa dotycząca umów kredytowych i pożyczkowych wymaga szczegółowej analizy. Podczas rozmowy przedstawię, jak wygląda sytuacja Twojej sprawie, czego można się spodziewać na dalszym etapie postępowania i jakie są szanse na zmniejszenie zadłużenia lub odzyskanie nienależnie pobranych przez bank pieniędzy.
+          <h3>Kredyty „Frankowe” (CHF) – aktywne i spłacone</h3>
+          <p>
+            Głównym filarem naszej praktyki jest pomoc tzw. „frankowiczom”. Prowadzimy sprawy
+            dotyczące kredytów waloryzowanych do waluty obcej, dążąc do unieważnienia wadliwych
+            umów zawierających klauzule niedozwolone. Co istotne, pomoc prawną oferujemy nie tylko
+            posiadaczom <b>czynnych kredytów</b>, ale także osobom, które swoje zobowiązanie już <b>całkowicie spłaciły</b> (zamknęły kredyt). W obu przypadkach walczymy o zwrot nienależnie
+            pobranych przez bank środków i definitywne uwolnienie Klienta od toksycznego produktu
+            finansowego.
+          </p>
+          <h3>Pożyczki i kredyty konsumenckie</h3>
+          <p>
+            Analizujemy również umowy kredytów gotówkowych i tzw. „chwilówek” pod kątem <b>klauzul abuzywnych</b>. Często zdarza się, że pożyczkodawcy naliczają rażąco wygórowane <b>prowizje</b> oraz inne pozaodsetkowe koszty kredytu, drastycznie zawyżając rzeczywiste
+            zadłużenie. W takich sytuacjach dążymy do odzyskania nadpłaconych kwot.
+          </p>
+          <h3>Nakaz zapłaty – skuteczna obrona</h3>
+          <p>
+            Otrzymanie sądowego <b>nakazu zapłaty</b> wymaga natychmiastowej reakcji, bowiem termin
+            wynosi zazwyczaj tylko 14 dni. Zapewniamy profesjonalną ochronę procesową osobom
+            pozwanym przez banki, firmy pożyczkowe i fundusze sekurytyzacyjne. Terminowo wnosimy
+            sprzeciwy, podważając zasadność roszczeń lub wysokość długu, co pozwala zablokować
+            egzekucję komorniczą i obronić majątek dłużnika.
+          </p>
+          <p>
+            Zapraszamy do kontaktu w celu bezpłatnej wstępnej analizy Państwa umowy lub otrzymanego nakazu zapłaty.
           </p>
         </div>
       </main>
