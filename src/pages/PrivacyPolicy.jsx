@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function PrivacyPolicy() {
   return (
-    <main>
+    <main className="spec-background">
       <div className="privacy-policy">
         <h3>Polityka prywatności</h3>
         <p>

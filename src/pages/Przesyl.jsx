@@ -17,7 +17,7 @@ export default function Przesyl() {
   return (
     <>
       <Header />
-      <main ref={mainRef}>
+      <main ref={mainRef} className="spec-background">
         <div className="przesyl">
           <h2>Infrastruktura przesyłowa na Twoim gruncie – zadbaj o należne wynagrodzenie</h2>
           <p>

@@ -18,7 +18,7 @@ export default function Gospodarcze() {
   return (
     <>
       <Header />
-      <main ref={mainRef}>
+      <main ref={mainRef} className="spec-background">
         <div className="gospodarcze">
           <h2>Kompleksowe wsparcie prawne dla biznesu – od startu po rozwój</h2>
           <p>

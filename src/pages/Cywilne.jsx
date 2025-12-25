@@ -17,7 +17,7 @@ export default function Cywilne() {
   return (
     <>
       <Header />
-      <main ref={mainRef}>
+      <main ref={mainRef} className="spec-background">
         <div className="cywilne">
           <h2>Prawo Cywilne – wszechstronna pomoc w sprawach codziennych i majątkowych</h2>
           <p>

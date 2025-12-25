@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="home-background">
         <div className="strona-glowna">
           <b className="header-with-line"><span>Nasza misja</span></b>
           <p className="underline-paragraph">

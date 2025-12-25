@@ -18,7 +18,7 @@ export default function Ofe() {
   return (
     <>
       <Header />
-      <main ref={mainRef}>
+      <main ref={mainRef} className="spec-background">
         <div className="ofe">
           <h2>Zwrot środków z OFE przekazanych do ZUS – pieniądze Twoich bliskich nie przepadły</h2>
           <p>

@@ -18,7 +18,7 @@ export default function Bankowe() {
   return (
     <>
       <Header />
-      <main ref={mainRef}>
+      <main ref={mainRef} className="spec-background">
         <div className="bankowe">
           <h2>Spory z bankami i ochrona dłużników – odzyskaj pieniądze i spokój</h2>
           <p>

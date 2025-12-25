@@ -18,7 +18,7 @@ export default function Spadek() {
   return (
     <>
      <Header/>
-      <main ref={mainRef}>
+      <main ref={mainRef} className="spec-background">
         <div className="spadek">
           <h2>Sprawy spadkowe – bezpieczeństwo prawne i wsparcie w
               trudnym czasie</h2>
