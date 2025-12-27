@@ -9,9 +9,15 @@ import Cywilne from './pages/Cywilne'
 import Spadek from './pages/Spadek'
 import Przesyl from './pages/Przesyl'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import { useEffect } from 'react';
+import { runOrphanFixer } from './utils/orphanFixer';
 
 
 export default function App() {
+  useEffect(() => {
+    runOrphanFixer();
+  }, []);
+  
   return (
     <>
       <BrowserRouter>

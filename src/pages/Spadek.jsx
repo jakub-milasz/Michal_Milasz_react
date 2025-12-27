@@ -18,10 +18,10 @@ export default function Spadek() {
   return (
     <>
      <Header/>
-      <main ref={mainRef} className="spec-background">
+      <main ref={mainRef}>
         <div className="spadek">
-          <h2>Sprawy spadkowe – bezpieczeństwo prawne i wsparcie w
-              trudnym czasie</h2>
+          <h2>Sprawy spadkowe</h2>
+          <h3 className="suptitle">Bezpieczeństwo prawne i wsparcie w trudnym czasie</h3>
           <p>
             Śmierć bliskiej osoby to zawsze trudne doświadczenie. Niestety, jest to również moment, w
             którym konieczne staje się dopełnienie wielu formalności prawnych. Przepisy prawa
@@ -30,29 +30,35 @@ export default function Spadek() {
             przejmując na siebie ciężar prowadzenia spraw urzędowych i sądowych, co pozwala
             Klientom skupić się na tym, co najważniejsze.
           </p>
-          <h3>Uporządkowanie spraw po zmarłym</h3>
-          <p>
-            Pomagamy w podstawowych procedurach związanych z potwierdzeniem praw do spadku.
-            Reprezentujemy Klientów w postępowaniach o <b>stwierdzenie nabycia spadku</b> przed sądem
-            oraz asystujemy przy uzyskiwaniu notarialnego <b>aktu poświadczenia dziedziczenia</b>.
-          </p>
-          <p>
-            Kluczowym aspektem naszej pracy jest dbałość o bezpieczeństwo finansowe spadkobierców.
-            Doradzamy, w jakiej formie przyjąć spadek (wprost czy z dobrodziejstwem inwentarza), a w
-            przypadku zadłużenia zmarłego – pomagamy w terminowym <b>odrzuceniu spadku</b>, chroniąc
-            majątek prywatny Klienta przed wierzycielami.
-          </p>
-          <h3>Zachowek i dział spadku</h3>
-          <p>
-            Wiele spraw spadkowych wiąże się z konfliktami rodzinnymi. Specjalizujemy się w
-            dochodzeniu roszczeń o <b>zachowek</b> – instytucji chroniącej bliskich pominiętych w
-            testamencie. Obliczamy wysokość należnego świadczenia i skutecznie egzekwujemy je od
-            spadkobierców testamentowych. Równie często prowadzimy sprawy o <b>dział spadku</b>. Kiedy
-            współwłaściciele nie mogą dojść do porozumienia co do podziału majątku (nieruchomości,
-            oszczędności), dążymy do wypracowania ugody lub reprezentujemy interesy Klienta w
-            sądzie, walcząc o sprawiedliwe rozliczenie nakładów i podział aktywów.
-          </p>
-          <h3>Testamenty i planowanie spadkowe</h3>
+          <div className="row">
+            <div className="col">
+              <h3 className="header-with-line"><span>Uporządkowanie spraw po zmarłym</span></h3>
+              <p>
+                Pomagamy w podstawowych procedurach związanych z potwierdzeniem praw do spadku.
+                Reprezentujemy Klientów w postępowaniach o <b>stwierdzenie nabycia spadku</b> przed sądem
+                oraz asystujemy przy uzyskiwaniu notarialnego <b>aktu poświadczenia dziedziczenia</b>.
+              </p>
+              <p>
+                Kluczowym aspektem naszej pracy jest dbałość o bezpieczeństwo finansowe spadkobierców.
+                Doradzamy, w jakiej formie przyjąć spadek (wprost czy z dobrodziejstwem inwentarza), a w
+                przypadku zadłużenia zmarłego – pomagamy w terminowym <b>odrzuceniu spadku</b>, chroniąc
+                majątek prywatny Klienta przed wierzycielami.
+              </p>
+            </div>
+            <div className="col">
+              <h3 className="header-with-line"><span>Zachowek i dział spadku</span></h3>
+              <p>
+                Wiele spraw spadkowych wiąże się z konfliktami rodzinnymi. Specjalizujemy się w
+                dochodzeniu roszczeń o <b>zachowek</b> – instytucji chroniącej bliskich pominiętych w
+                testamencie. Obliczamy wysokość należnego świadczenia i skutecznie egzekwujemy je od
+                spadkobierców testamentowych. Równie często prowadzimy sprawy o <b>dział spadku</b>. Kiedy
+                współwłaściciele nie mogą dojść do porozumienia co do podziału majątku (nieruchomości,
+                oszczędności), dążymy do wypracowania ugody lub reprezentujemy interesy Klienta w
+                sądzie, walcząc o sprawiedliwe rozliczenie nakładów i podział aktywów.
+              </p>
+            </div>
+          </div>
+          <h3 className="header-with-line"><span>Testamenty i planowanie spadkowe</span></h3>
           <p>
             Działamy również prewencyjnie. Doradzamy, jak sporządzić ważny i skuteczny <b>testament</b>,
             w tym testament z zapisami windykacyjnymi czy wydziedziczeniem, aby wola spadkodawcy

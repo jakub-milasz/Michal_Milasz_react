@@ -18,7 +18,7 @@ export default function OMnie() {
   return (
     <>
       <Header />
-      <main ref={mainRef} className="o-mnie-background">
+      <main ref={mainRef}>
         <div className="o-mnie">
           <img src={profilowe} alt="Zdjęcie profilowe" />
           <div className="text">
