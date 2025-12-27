@@ -17,9 +17,10 @@ export default function Przesyl() {
   return (
     <>
       <Header />
-      <main ref={mainRef} className="spec-background">
+      <main ref={mainRef}>
         <div className="przesyl">
-          <h2>Infrastruktura przesyłowa na Twoim gruncie – zadbaj o należne wynagrodzenie</h2>
+          <h2>Infrastruktura przesyłowa na Twoim gruncie</h2>
+          <h3 className="suptitle">Zadbaj o należne wynagrodzenie</h3>
           <p>
             Przez wiele prywatnych posesji przebiegają linie energetyczne, gazociągi, wodociągi czy
             kable telekomunikacyjne. Choć infrastruktura ta jest niezbędna społecznie, dla właściciela
@@ -29,23 +30,29 @@ export default function Przesyl() {
             Kancelaria skutecznie pomaga w wyegzekwowaniu należnych kwot od przedsiębiorstw
             przesyłowych (zakłady energetyczne, gazownie, wodociągi).
           </p>
-          <h3>Wynagrodzenie za bezumowne korzystanie (za przeszłość)</h3>
-          <p>
-            Jeżeli urządzenia zostały posadowione na Państwa działce bez zgody lub bez ważnej decyzji
-            administracyjnej, a przedsiębiorstwo nie płaciło czynszu dzierżawnego, mogą Państwo żądać
-            pieniędzy za okres wsteczny. Pomagamy w dochodzeniu <b>wynagrodzenia za bezumowne
-            korzystanie z nieruchomości</b>, które zazwyczaj obejmuje okres do 10 lat wstecz (w
-            niektórych przypadkach 6 lat).
-          </p>
-          <h3>Ustanowienie służebności przesyłu (na przyszłość)</h3>
-          <p>
-            Drugim filarem naszych działań jest uregulowanie stanu prawnego na przyszłość poprzez <b>ustanowienie służebności przesyłu</b>. Dążymy do zawarcia umowy (lub uzyskania orzeczenia
-            sądowego), na mocy której przedsiębiorca uzyskuje prawo dostępu do urządzeń, ale w
-            zamian ma obowiązek wypłacić właścicielowi <b>odpowiednie wynagrodzenie</b> (jednorazowe
-            lub okresowe). Kwota ta ma rekompensować trwale ograniczone prawo własności i obniżoną
-            wartość rynkową działki.
-          </p>
-          <h3>Skuteczna walka z monopolem</h3>
+          <div className="row">
+            <div className="col">
+              <h3 className="header-with-line"><span>Wynagrodzenie za bezumowne korzystanie (za przeszłość)</span></h3>
+              <p>
+                Jeżeli urządzenia zostały posadowione na Państwa działce bez zgody lub bez ważnej decyzji
+                administracyjnej, a przedsiębiorstwo nie płaciło czynszu dzierżawnego, mogą Państwo żądać
+                pieniędzy za okres wsteczny. Pomagamy w dochodzeniu <b>wynagrodzenia za bezumowne
+                korzystanie z nieruchomości</b>, które zazwyczaj obejmuje okres do 10 lat wstecz (w
+                niektórych przypadkach 6 lat).
+              </p>
+            </div>
+            <div className="col">
+              <h3 className="header-with-line"><span>Ustanowienie służebności przesyłu (na przyszłość)</span></h3>
+              <p>
+                Drugim filarem naszych działań jest uregulowanie stanu prawnego na przyszłość poprzez <b>ustanowienie służebności przesyłu</b>. Dążymy do zawarcia umowy (lub uzyskania orzeczenia
+                sądowego), na mocy której przedsiębiorca uzyskuje prawo dostępu do urządzeń, ale w
+                zamian ma obowiązek wypłacić właścicielowi <b>odpowiednie wynagrodzenie</b> (jednorazowe
+                lub okresowe). Kwota ta ma rekompensować trwale ograniczone prawo własności i obniżoną
+                wartość rynkową działki.
+              </p>
+            </div>
+          </div>
+          <h3 className="header-with-line"><span>Skuteczna walka z monopolem</span></h3>
           <p>
             Przedsiębiorstwa przesyłowe często odmawiają wypłat, powołując się na zasiedzenie
             służebności. Nasza Kancelaria przeprowadza szczegółową analizę historyczno-prawną, by

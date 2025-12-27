@@ -3,13 +3,13 @@ import React from 'react';
 
 export default function PrivacyPolicy() {
   return (
-    <main className="spec-background">
+    <main>
       <div className="privacy-policy">
         <h3>Polityka prywatności</h3>
         <p>
           Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych
           przekazywanych przez Użytkowników w związku z korzystaniem ze strony internetowej
-          dostępnej pod adresem https://michalmilasz.netlify.app/.
+          dostępnej pod adresem https://michalmilasz.pl/.
         </p>
         <ol type='I'>
           <li>Administrator Danych Osobowych</li>
