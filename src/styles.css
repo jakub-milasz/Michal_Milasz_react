@@ -396,7 +396,8 @@ main {
   background-position: top center; 
   background-repeat: no-repeat;
   background-size: 100% 1px;
-  padding-top: 20px; 
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* O mnie */
