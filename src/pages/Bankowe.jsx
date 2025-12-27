@@ -31,7 +31,7 @@ export default function Bankowe() {
           </p>
           <div className="row">
             <div className="col">
-              <h3 className="header-with-line"><span>Kredyty „Frankowe” (CHF) – aktywne i spłacone</span></h3>
+              <h3 className="header-with-line"><span>Kredyty „frankowe” – aktywne i spłacone</span></h3>
               <p>
                 Głównym filarem naszej praktyki jest pomoc tzw. „frankowiczom”. Prowadzimy sprawy
                 dotyczące kredytów waloryzowanych do waluty obcej, dążąc do unieważnienia wadliwych
