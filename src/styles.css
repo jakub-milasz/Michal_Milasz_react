@@ -299,6 +299,7 @@ h2 {
 
 .banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
@@ -306,7 +307,6 @@ h2 {
 
 .tiles {
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 600px;
@@ -318,6 +318,7 @@ h2 {
   color: var(--gold);
   text-decoration: none;
   padding: 30px 20px;
+  max-width: 250px;
   border-radius: 16px;
   display: flex;
   justify-content: center;
@@ -769,7 +770,8 @@ u {
   /* Tiles */
 
   .tile {
-    font-size: 1rem;
+    font-size: .8rem;
+    padding: 15px 10px;
   }
 
   /* Wspólny nagłówek */
