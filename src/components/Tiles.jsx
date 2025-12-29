@@ -21,10 +21,10 @@ export default function Tiles() {
               Prawo gospodarcze
             </a>
             <a className="tile" href="przesyl">
-              Odszkodowania<br />za przesył
+              Odszkodowania za przesył
             </a>
             <a className="tile" href="ofe">
-              Zwrot pieniędzy<br />z OFE
+              Zwrot pieniędzy z OFE
             </a>
           </nav>
         </div>
