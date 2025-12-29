@@ -306,6 +306,7 @@ h2 {
 
 .tiles {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 600px;
